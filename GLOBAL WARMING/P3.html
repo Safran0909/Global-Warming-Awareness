@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Global Warming Awareness - Our Services to make a difference in combating climate change.">
+    <title>Global Warming Awareness - Our Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #00695c, #004d40);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transform: scale(0.95);
+            animation: headerZoomIn 0.8s ease forwards;
+        }
+
+        @keyframes headerZoomIn {
+            0% {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            font-weight: 600;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h2 {
+            font-size: 1.6em;
+            margin-top: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Service Section Layout */
+        .container {
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto auto;
+            gap: 30px 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: containerFadeIn 1s 0.5s forwards;
+        }
+
+        @keyframes containerFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Service Cards */
+        .service-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            border: 1px solid #ddd;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.8em;
+            color: #00796b;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .service-card p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff7043;
+            color: white;
+            font-weight: 600;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            align-self: flex-start;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background-color: #ff5722;
+            transform: scale(1.05);
+        }
+
+        .cta-button:active {
+            transform: scale(1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 20px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+                gap: 30px;
+            }
+
+            .cta-button {
+                padding: 12px 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Global Warming Awareness</h1>
+        <h2>Our Services to Make a Difference</h2>
+    </header>
+
+    <div class="container">
+        <div class="service-card">
+            <h3>1. Educational Programs & Workshops</h3>
+            <p>Interactive workshops and seminars focusing on global warming, its impacts, and actionable solutions. Ideal for educational institutions and businesses.</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+
+        <div class="service-card">
+            <h3>2. Awareness Campaigns</h3>
+            <p>Public campaigns designed to raise awareness about global warming and inspire communities to take meaningful action to combat it.</p>
+            <a href="#" class="cta-button">Join the Campaign</a>
+        </div>
+
+        <div class="service-card">
+            <h3>3. Consultation for Businesses</h3>
+            <p>Expert consultations to help businesses adopt sustainable practices, reduce their carbon footprints, and contribute to a greener future.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+
+        <div class="service-card">
+            <h3>4. Research & Reports</h3>
+            <p>Detailed research and reports to help governments, businesses, and organizations understand the latest climate change trends and potential solutions.</p>
+            <a href="#" class="cta-button">Explore Reports</a>
+        </div>
+
+        <div class="service-card">
+            <h3>5. Climate Action Projects</h3>
+            <p>Collaborate with us on community-driven climate action projects, such as tree planting, renewable energy initiatives, and eco-friendly urban development.</p>
+            <a href="#" class="cta-button">Participate in Projects</a>
+        </div>
+
+        <div class="service-card">
+            <h3>6. Digital Awareness Tools</h3>
+            <p>Interactive tools to help individuals and businesses track their environmental footprints and make informed decisions on reducing their impact.</p>
+            <a href="#" class="cta-button">Download Our Tools</a>
+        </div>
+    </div>
+
+</body>
+</html>
